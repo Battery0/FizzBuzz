@@ -1,12 +1,14 @@
 class Integer
 
   def fizzbuzz
-    if self % 15 == 0 || self % 30 == 0
+    if (self % 15).zero?
       "fizzbuzz"
     elsif (self % 3).zero?
       "fizz"
-    else
+    elsif (self % 5).zero?
       "buzz"
+    else
+      self
     end
   end
   
