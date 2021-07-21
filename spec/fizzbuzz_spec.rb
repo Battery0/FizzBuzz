@@ -26,3 +26,12 @@ describe 'fizzbuzz' do
     expect(30.fizzbuzz).to eq 'fizzbuzz'
   end
 end
+
+describe 'fizzbuzz' do
+  it 'returns integer when passed non-fizz/buzz/fizzbuzz integer' do
+    expect(4.fizzbuzz).to eq 4
+    expect(8.fizzbuzz).to eq 8
+    expect(13.fizzbuzz).to eq 13
+    expect(98.fizzbuzz).to eq 98
+  end
+end
